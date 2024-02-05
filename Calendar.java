@@ -69,5 +69,16 @@ public class Calendar extends javax.swing.JPanel {
         SimpleDateFormat df = new SimpleDateFormat("MMMM-yyyy");
         lbMonthYear.setText(df.format(calendar.getTime()));
     }
+
+        private javax.swing.JButton cmdBack;
+    private javax.swing.JButton cmdNext;
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lbDate;
+    private javax.swing.JLabel lbMonthYear;
+    private javax.swing.JLabel lbTime;
+    private javax.swing.JLabel lbType;
+    private swing.PanelSlide slide;
                       
 }
