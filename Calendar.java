@@ -52,5 +52,22 @@ public class Calendar extends javax.swing.JPanel {
 
                        
     private swing.PanelSlide slide;
+
+
+         private void thisMonth() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());   //  today
+        month = calendar.get(Calendar.MONTH) + 1;
+        year = calendar.get(Calendar.YEAR);
+    }
+
+    private void showMonthYear() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.MONTH, month - 1);
+        calendar.set(Calendar.YEAR, year);
+        calendar.set(Calendar.DATE, 1);
+        SimpleDateFormat df = new SimpleDateFormat("MMMM-yyyy");
+        lbMonthYear.setText(df.format(calendar.getTime()));
+    }
                       
 }
