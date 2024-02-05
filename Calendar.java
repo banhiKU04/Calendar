@@ -1,17 +1,56 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
+
 
 package com.mycompany.calendar;
 
-/**
- *
- * @author Lenovo
- */
-public class Calendar {
+import swing.PanelSlide;
+        
+public class Calendar extends javax.swing.JPanel {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+    public Calendar() {
+        initComponents();
+        slide.show(new PanelDate(5,2021), PanelSlide.AnimateType.TO_RIGHT);
+        
     }
+
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        slide = new swing.PanelSlide();
+
+        javax.swing.GroupLayout slideLayout = new javax.swing.GroupLayout(slide);
+        slide.setLayout(slideLayout);
+        slideLayout.setHorizontalGroup(
+            slideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 395, Short.MAX_VALUE)
+        );
+        slideLayout.setVerticalGroup(
+            slideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 233, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(slide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(slide, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+    }                       
+
+
+                       
+    private swing.PanelSlide slide;
+                      
 }
